@@ -23,5 +23,5 @@ DESC
 #         'EPCalendar/**/*.xib'
 #    ]
 # }
-  s.resources        = ["EPCalendar/EPCalendarPicker/EPCalendarCell1.xib", "EPCalendar/EPCalendarPicker/EPCalendarHeaderView.xib"]
+  s.resources        = ["EPCalendar/EPCalendarPicker/EPCalendarCell.xib", "EPCalendar/EPCalendarPicker/EPCalendarHeaderView.xib"]
 end
