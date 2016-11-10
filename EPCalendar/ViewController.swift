@@ -12,6 +12,9 @@ class ViewController: UIViewController, EPCalendarPickerDelegate {
 
     @IBOutlet weak var txtViewDetail: UITextView!
     @IBOutlet weak var btnShowMeCalendar: UIButton!
+    
+    var calendarPicker: EPCalendarViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,34 +27,32 @@ class ViewController: UIViewController, EPCalendarPickerDelegate {
     }
 
     @IBAction func onTouchShowMeCalendarButton(sender: AnyObject) {
-        let calendarPicker = EPCalendarPicker(startYear: 2016, endYear: 2017, multiSelection: true, selectedDates: [])
+        
+        let currentDate = Date()
+        self.calendarPicker = EPCalendarViewController(startYear: currentDate.year(), endYear: currentDate.year() + 1, selectedDates: [], ignoredDates: [])
         calendarPicker.calendarDelegate = self
-        calendarPicker.startDate = NSDate()
+        calendarPicker.startDate = Date()
         calendarPicker.hightlightsToday = true
         calendarPicker.showsTodaysButton = true
         calendarPicker.hideDaysFromOtherMonth = true
-        calendarPicker.tintColor = UIColor.orangeColor()
-//        calendarPicker.barTintColor = UIColor.greenColor()
-        calendarPicker.dayDisabledTintColor = UIColor.grayColor()
-        calendarPicker.title = "Date Picker"
         
-//        calendarPicker.backgroundImage = UIImage(named: "background_image")
-//        calendarPicker.backgroundColor = UIColor.blueColor()
+        calendarPicker.view.frame = self.view.bounds;
+        calendarPicker.willMove(toParentViewController: self)
+        self.view.addSubview(calendarPicker.view)
+        self.addChildViewController(calendarPicker)
+        calendarPicker.didMove(toParentViewController: self)
         
-        let navigationController = UINavigationController(rootViewController: calendarPicker)
-        self.presentViewController(navigationController, animated: true, completion: nil)   
+
     }
     
-    func epCalendarPicker(_: EPCalendarPicker, didCancel error : NSError) {
-        txtViewDetail.text = "User cancelled selection"
+    //! MARK: EPCalendarPickerDelegate
+    func epCalendar(_ calendar: EPCalendarViewController, scrollViewDidScroll scrollView: UIScrollView) {
         
     }
-    func epCalendarPicker(_: EPCalendarPicker, didSelectDate date : NSDate) {
-        txtViewDetail.text = "User selected date: \n\(date)"
+    
+    func epCalendar(_ calendar: EPCalendarViewController, shouldSelectDate date: Date) -> Bool {
         
-    }
-    func epCalendarPicker(_: EPCalendarPicker, didSelectMultipleDate dates : [NSDate]) {
-        txtViewDetail.text = "User selected dates: \n\(dates)"
+        return true
     }
 
 }

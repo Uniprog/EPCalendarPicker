@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BreeSerif-Light.otf">
+            <string>BreeSerif-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DateCell" id="gTV-IL-0wX" customClass="EPCalendarCell" customModule="Munchkin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="149" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="149" height="137"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqZ-GD-NWb">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="BreeSerif-Light" family="Bree Serif" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.45016961350000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YZG-fq-eSp"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S8K-MM-uYC">
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cqZ-GD-NWb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-15" id="1vq-0V-sru"/>
+                <constraint firstItem="cqZ-GD-NWb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" priority="999" constant="1" id="49C-4B-7ez"/>
+                <constraint firstItem="YZG-fq-eSp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6Yd-c5-Z28"/>
+                <constraint firstItem="S8K-MM-uYC" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="88d-Jj-sJ5"/>
+                <constraint firstAttribute="trailing" secondItem="YZG-fq-eSp" secondAttribute="trailing" id="BTO-9G-RVT"/>
+                <constraint firstItem="YZG-fq-eSp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EM2-0E-3pC"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cqZ-GD-NWb" secondAttribute="trailing" constant="-15" id="JFc-pV-bti"/>
+                <constraint firstItem="S8K-MM-uYC" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="2" id="Yp5-fB-dts"/>
+                <constraint firstAttribute="bottom" secondItem="YZG-fq-eSp" secondAttribute="bottom" id="gzL-Qo-hIt"/>
+                <constraint firstItem="cqZ-GD-NWb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="hcq-WQ-FZQ"/>
+                <constraint firstItem="cqZ-GD-NWb" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" priority="999" id="it5-9R-RF9"/>
+                <constraint firstItem="S8K-MM-uYC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ooD-Hz-gBw"/>
+                <constraint firstItem="S8K-MM-uYC" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="2" id="yHX-Qo-PZH"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cqZ-GD-NWb" secondAttribute="bottom" constant="5" id="zd6-X9-51u"/>
+            </constraints>
+            <size key="customSize" width="149" height="137"/>
+            <connections>
+                <outlet property="backImageView" destination="YZG-fq-eSp" id="Pw0-Pr-m2f"/>
+                <outlet property="coverImageView" destination="S8K-MM-uYC" id="aw3-n3-PWI"/>
+                <outlet property="lblDay" destination="cqZ-GD-NWb" id="k8Y-iO-I6q"/>
+            </connections>
+            <point key="canvasLocation" x="85.5" y="103.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
