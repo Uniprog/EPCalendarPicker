@@ -23,8 +23,8 @@ open class EPCalendarViewController: UICollectionViewController {
     open var showsTodaysButton: Bool = true
     open var isWeekendsSelectable: Bool = false
     
-    var arrSelectedDates = [Date]()
-    var arrIgnoredDates = [Date]()
+    open var arrSelectedDates = [Date]()
+    open var arrIgnoredDates = [Date]()
     
     // new options
     open var startDate: Date?
@@ -34,7 +34,7 @@ open class EPCalendarViewController: UICollectionViewController {
     fileprivate(set) open var startYear: Int
     fileprivate(set) open var endYear: Int
     
-    var currentYear: Int?
+    open var currentYear: Int?
     
     
     override open func viewDidLoad() {
@@ -314,12 +314,12 @@ open class EPCalendarViewController: UICollectionViewController {
         self.collectionView?.scrollToIndexpathByShowingHeader(indexPath)
     }
     
-    func clearSelectedDates() {
+    open func clearSelectedDates() {
         arrSelectedDates.removeAll()
         collectionView?.reloadData()
     }
     
-    func setSelectedDates(_ dates: [Date]) {
+    open func setSelectedDates(_ dates: [Date]) {
         arrSelectedDates = dates
         collectionView?.reloadData()
     }
