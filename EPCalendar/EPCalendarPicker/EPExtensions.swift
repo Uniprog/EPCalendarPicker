@@ -193,16 +193,3 @@ extension Date {
     }
 }
 
-extension UIImage {
-    
-    class func todayClendarIconImage() -> UIImage? {
-        return UIImage(named: "calendar-today-icon")
-    }
-    
-    class func calendarCowHeadIconImage() -> UIImage? {
-        return UIImage(named: "calendar-cow-head-icon")
-    }
-    
-}
-
-

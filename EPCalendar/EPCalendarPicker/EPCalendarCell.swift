@@ -56,7 +56,7 @@ class EPCalendarCell: UICollectionViewCell {
             
         case .Selected:
             
-            coverImageView.image = UIImage.calendarCowHeadIconImage()
+            coverImageView.image = EPConfig.calendarCowHeadIconImage
             lblDay.textColor = EPConfig.selectedDateColor
             break
             

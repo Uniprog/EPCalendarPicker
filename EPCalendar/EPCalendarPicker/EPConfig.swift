@@ -15,7 +15,6 @@ public struct EPConfig {
     public static var weekdayDateColor = UIColor.lightGray
     public static var weekendDateColor = UIColor.lightGray
     public static var todayDateColor = UIColor.lightGray
-    public static var calendarCowHeadIconImage = UIColor.lightGray
     public static var selectedDateColor = UIColor.lightGray
     public static var ignoredDateColor = UIColor.lightGray
     public static var dayDisabledDateColor = UIColor.lightGray
@@ -23,6 +22,8 @@ public struct EPConfig {
     public static var outOfDateColor = UIColor.lightGray
     
     public static var todayClendarIconImage: UIImage?
+    public static var calendarCowHeadIconImage: UIImage?
+
     
     public static var TodayDateText = "TODAY"
 }
