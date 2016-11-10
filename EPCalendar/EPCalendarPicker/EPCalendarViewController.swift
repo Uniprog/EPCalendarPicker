@@ -225,7 +225,7 @@ open class EPCalendarViewController: UICollectionViewController {
             let firstDayOfMonth = startDate.dateByAddingMonths((indexPath as NSIndexPath).section)
             
             header.lblTitle.text = firstDayOfMonth.monthNameShort()
-            header.lblTitle.textColor = UIColor.headerMonthColor()
+            header.lblTitle.textColor = EPConfig.headerMonthColor
             
             return header;
         }

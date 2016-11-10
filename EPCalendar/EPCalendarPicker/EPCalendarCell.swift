@@ -39,45 +39,45 @@ class EPCalendarCell: UICollectionViewCell {
         switch state {
         case .Weekday:
             
-            lblDay.textColor = UIColor.weekdayDateColor()
+            lblDay.textColor = EPConfig.weekdayDateColor
             break
             
         case .Weekend:
             
-            lblDay.textColor = UIColor.weekendDateColor()
+            lblDay.textColor = EPConfig.weekendDateColor
             break
             
         case .Today:
             
-            backImageView.image = UIImage.todayClendarIconImage()
-            lblDay.text = "TODAY".localized
-            lblDay.textColor = UIColor.todayDateColor()
+            backImageView.image = EPConfig.todayClendarIconImage
+            lblDay.text = EPConfig.TodayDateText
+            lblDay.textColor = EPConfig.todayDateColor
             break
             
         case .Selected:
             
             coverImageView.image = UIImage.calendarCowHeadIconImage()
-            lblDay.textColor = UIColor.selectedDateColor()
+            lblDay.textColor = EPConfig.selectedDateColor
             break
             
         case .Ignored:
             
-            lblDay.textColor = UIColor.ignoredDateColor()
+            lblDay.textColor = EPConfig.ignoredDateColor
             break
             
         case .Hidded:
             
-            lblDay.textColor = UIColor.dayDisabledDateColor()
+            lblDay.textColor = EPConfig.dayDisabledDateColor
             break
             
         case .OtherMonth:
             
-            lblDay.textColor = UIColor.otherMonthDateColor()
+            lblDay.textColor = EPConfig.otherMonthDateColor
             break
             
         case .OutOfDate:
             
-            lblDay.textColor = UIColor.outOfDateColor()
+            lblDay.textColor = EPConfig.outOfDateColor
             break
         }
     }

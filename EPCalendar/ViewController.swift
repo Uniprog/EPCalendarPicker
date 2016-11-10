@@ -27,7 +27,7 @@ class ViewController: UIViewController, EPCalendarPickerDelegate {
     }
 
     @IBAction func onTouchShowMeCalendarButton(sender: AnyObject) {
-        
+                
         let currentDate = Date()
         self.calendarPicker = EPCalendarViewController(startYear: currentDate.year(), endYear: currentDate.year() + 1, selectedDates: [], ignoredDates: [])
         calendarPicker.calendarDelegate = self

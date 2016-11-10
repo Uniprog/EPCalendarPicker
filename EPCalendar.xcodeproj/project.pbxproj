@@ -14,8 +14,6 @@
 		E82FDC871DD3C41200D6A071 /* EPCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82FDC811DD3C41200D6A071 /* EPCalendarViewController.swift */; };
 		E82FDC881DD3C41200D6A071 /* EPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82FDC821DD3C41200D6A071 /* EPExtensions.swift */; };
 		E82FDC8A1DD408BA00D6A071 /* EPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82FDC891DD408BA00D6A071 /* EPConfig.swift */; };
-		E82FDC8C1DD4383700D6A071 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82FDC8B1DD4383700D6A071 /* UIColor.swift */; };
-		E82FDC8E1DD438AB00D6A071 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82FDC8D1DD438AB00D6A071 /* String.swift */; };
 		F4C1C9BD1BE7A306001AA643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1C9BC1BE7A306001AA643 /* AppDelegate.swift */; };
 		F4C1C9BF1BE7A306001AA643 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1C9BE1BE7A306001AA643 /* ViewController.swift */; };
 		F4C1C9C21BE7A306001AA643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C1C9C01BE7A306001AA643 /* Main.storyboard */; };
@@ -238,10 +236,8 @@
 				E82FDC851DD3C41200D6A071 /* EPCalendarHeaderView.swift in Sources */,
 				E82FDC831DD3C41200D6A071 /* EPCalendarCell.swift in Sources */,
 				F4C1C9BF1BE7A306001AA643 /* ViewController.swift in Sources */,
-				E82FDC8E1DD438AB00D6A071 /* String.swift in Sources */,
 				F4C1C9BD1BE7A306001AA643 /* AppDelegate.swift in Sources */,
 				E82FDC881DD3C41200D6A071 /* EPExtensions.swift in Sources */,
-				E82FDC8C1DD4383700D6A071 /* UIColor.swift in Sources */,
 				E82FDC871DD3C41200D6A071 /* EPCalendarViewController.swift in Sources */,
 				E82FDC8A1DD408BA00D6A071 /* EPConfig.swift in Sources */,
 			);

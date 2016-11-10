@@ -11,16 +11,20 @@ import UIKit
 
 struct EPConfig {
     
-    var weekdayDateColor = UIColor.lightGray
-    var weekendDateColor = UIColor.lightGray
-    var todayClendarIconImage = UIColor.lightGray
-    var todayDateColor = UIColor.lightGray
-    var calendarCowHeadIconImage = UIColor.lightGray
-    var selectedDateColor = UIColor.lightGray
-    var ignoredDateColor = UIColor.lightGray
-    var dayDisabledDateColor = UIColor.lightGray
-    var otherMonthDateColor = UIColor.lightGray
-    var outOfDateColor = UIColor.lightGray
-   
+    static var headerMonthColor = UIColor.lightGray
+    static var weekdayDateColor = UIColor.lightGray
+    static var weekendDateColor = UIColor.lightGray
+    static var todayDateColor = UIColor.lightGray
+    static var calendarCowHeadIconImage = UIColor.lightGray
+    static var selectedDateColor = UIColor.lightGray
+    static var ignoredDateColor = UIColor.lightGray
+    static var dayDisabledDateColor = UIColor.lightGray
+    static var otherMonthDateColor = UIColor.lightGray
+    static var outOfDateColor = UIColor.lightGray
+    
+    static var todayClendarIconImage: UIImage?
+
+    static var TodayDateText = "TODAY"
+
 
 }
